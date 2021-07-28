@@ -8,6 +8,11 @@
     <script type="text/javascript">
         function redireccionar()
         {
+            const queryString = window.location.search;
+            console.log(queryString);
+            const urlParams = new URLSearchParams(queryString);
+            const userEmail = urlParams.get('email');
+            console.log(userEmail);
             window.location="revvy://dashboard/dashboard_screen?email=jsmorales@moxehub.com";
         }
         // Una vez cargada la pagina, iniciamos la redireccion
