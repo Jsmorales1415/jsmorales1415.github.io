@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flutter deep link</title>
+    <script type="text/javascript">
+        function redireccionar()
+        {
+            window.location="revvy://dashboard/dashboard_screen?email=jsmorales@moxehub.com";
+        }
+        // Una vez cargada la pagina, iniciamos la redireccion
+        window.onload = redireccionar;
+    </script>
 </head>
 <body>
     <a href="revvy://dashboard/dashboard_screen?email=jsmorales@moxehub.com">Forgot your password</a>
