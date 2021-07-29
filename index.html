@@ -12,9 +12,9 @@
             console.log(queryString);
             const urlParams = new URLSearchParams(queryString);
             const userEmail = urlParams.get('email');
-            window.location="revvy://dashboard/dashboard_screen?email=jsmorales@moxehub.com";
+            window.location="revvy://dashboard/dashboard_screen?email="+userEmail;
         }
-        // Una vez cargada la pagina, iniciamos la redireccion
+        
         window.onload = redireccionar;
     </script>
 </head>
